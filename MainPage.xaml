@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADVMOB1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+            <FlexLayout
+                Wrap="Wrap"
+                JustifyContent="Center"
+                >
+                <Button
+                    x:Name="GoToContPage1"
+                    Text="Go to Content Page"
+                    Clicked="GoToContPage1_Clicked"
+                    Margin="3"/>
+                <Button
+                    x:Name="GoToNavPage"
+                    Text="Go to Navigation Page"
+                    Clicked="GoToNavPage_Clicked"
+                    Margin="3"
+                    />
+                <Button
+                    x:Name="GoToFlyoutPage"
+                    Text="Go to Flyout Page"
+                    Clicked="GoToFlyoutPage_Clicked"
+                    Margin="3"/>
+                <Button
+                    x:Name="GoToTabbedPage"
+                    Text="Go to Tabbed Page"
+                    Clicked="GoToTabbedPage_Clicked"
+                    Margin="3"/>
+            </FlexLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

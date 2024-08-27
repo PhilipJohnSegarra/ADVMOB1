@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADVMOB1.Pages.TabbedPages.DemoTabbedPage"
+             Title="DemoTabbedPage"
+             Loaded="TabbedPage_Loaded">
+    <ContentPage Title="Home"
+                 Loaded="ContentPage_Loaded">
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Padding="30">
+            <Label HorizontalTextAlignment="Center">This is the Home Page</Label>
+            <Image Source="hi.gif"
+                   MaximumWidthRequest="300"
+                   IsAnimationPlaying="False"
+                   x:Name="hiGIF"/>
+        </VerticalStackLayout>
+    </ContentPage>
+    <ContentPage Title="About"
+                 Loaded="ContentPage_Loaded_1">
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Padding="30">
+            <Label HorizontalTextAlignment="Center">This is the About Page</Label>
+            <Image Source="about.gif"
+                   MaximumWidthRequest="300"
+                   IsAnimationPlaying="False"
+                   x:Name="aboutGIF"/>
+        </VerticalStackLayout>
+    </ContentPage>
+    <ContentPage Title="More"
+                 Loaded="ContentPage_Loaded_2">
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Padding="30">
+            <Label HorizontalTextAlignment="Center">This is the More Page</Label>
+            <Image Source="more.gif"
+                   MaximumWidthRequest="300"
+                   IsAnimationPlaying="False"
+                   x:Name="moreGIF"/>
+        </VerticalStackLayout>
+    </ContentPage>
+</TabbedPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADVMOB1.Pages.FlyoutPage.DemoFlyoutPage"
+             Title="DemoFlyoutPage"
+             FlyoutLayoutBehavior="Popover">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout Page" BackgroundColor="WhiteSmoke">
+            <VerticalStackLayout>
+                <Button
+                    Text="Main Page"
+                    x:Name="MainPage"
+                    Clicked="MainPage_Clicked"
+                    Margin="3"/>
+                <Button
+                    Text="Content Page"
+                    x:Name="ContentPage"
+                    Clicked="ContentPage_Clicked"
+                    Margin="3"/>
+                <Button
+                    Text="Navigation Page"
+                    x:Name="NavPage"
+                    Clicked="NavPage_Clicked"
+                    Margin="3"/>
+                <Button
+                    Text="Tabbed Page"
+                    x:Name="TabbedPage"
+                    Clicked="TabbedPage_Clicked"
+                    Margin="3"/>
+            </VerticalStackLayout>
+            
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Loaded="ContentPage_Loaded">
+                    <VerticalStackLayout
+                        HorizontalOptions="Center"
+                        Padding="30">
+                        <Label Text="This is the FlyoutDetail"
+                               HorizontalTextAlignment="Center"/>
+                        <Image Source="fly.gif"
+                               MaximumWidthRequest="300"
+                               IsAnimationPlaying="False"
+                               x:Name="flyGIF"/>
+                    </VerticalStackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

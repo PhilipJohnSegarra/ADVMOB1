@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ADVMOB1.Pages.ContentPages.ContentPage1"
+             Title="ContentPage1"
+             Loaded="ContentPage_Loaded">
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        Padding="30">
+        <Label 
+            Text="Welcome to Content Page 1"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="hi.gif"
+               MaximumWidthRequest="300"
+               IsAnimationPlaying="False"
+               x:Name="hiGIF"/>
+        <Button
+            x:Name="GoBack"
+            Text="Go Back"
+            Clicked="GoBack_Clicked"
+            Margin="3"/>
+        <Button
+            x:Name="GoToContentPage2"
+            Text="Go to content page 2"
+            Clicked="GoToContentPage2_Clicked"
+            Margin="3"/>
+    </VerticalStackLayout>
+</ContentPage>
